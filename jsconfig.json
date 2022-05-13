@@ -1,19 +1,18 @@
 {
+  "vueCompilerOptions": {
+    "experimentalShamefullySupportOptionsApi": false
+  },
   "compilerOptions": {
+    "jsx": "preserve",
     "target": "es5",
     "module": "esnext",
     "baseUrl": "./",
     "moduleResolution": "node",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ]
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   }
 }
+
+//Or you can configure `"experimentalShamefullySupportOptionsApi": true / false` in `"vueCompilerOptions"` property in tsconfig / jsconfig to disable this warning.volar
